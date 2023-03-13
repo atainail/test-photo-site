@@ -1,4 +1,4 @@
-
+$('.navigation-import').load("nav.txt");
 
 
 
@@ -29,8 +29,6 @@ importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
 
 
 
-
-
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -47,7 +45,18 @@ function reveal() {
 
   window.addEventListener("scroll", reveal);
 
+let scrollTracker = 0;
 
 
-$('.navigation-import').load("nav.txt");
+
+
+
+  window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if(scroll > 150){
+        document.querySelector(".scroll-down").innerHTML = "";
+    } else {
+        document.querySelector(".scroll-down").innerHTML = "hfh";
+    }
+});
 

@@ -93,6 +93,14 @@ svg:hover {
     text-align: center;
 }
 
+.scroll-down {
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
+
  
 
 .social {
