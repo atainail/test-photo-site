@@ -3,6 +3,28 @@ body {
     padding: 0;
     background-color: black;
     /* background: linear-gradient(black, rgb(84, 84, 84)); */
+
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: wihte; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .navbar{
@@ -97,7 +119,69 @@ i:hover{
   height: 45m;
   padding: 5em 2em 2em 0 ;
 
+  /* animation: photoFadeIn 4s;
+    -webkit-animation: photoFadeIn 4s;
+    -moz-animation: photoFadeIn 4s;
+    -o-animation: photoFadeIn 4s;
+    -ms-animation: photoFadeIn 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0; */
+
+    
 }
+
+/* Reveal tutorial found here https://alvarotrigo.com/blog/css-animations-scroll/ */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transition: all 1s;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 #carouselExampleIndicators{
   padding: 2em;

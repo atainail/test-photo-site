@@ -17,21 +17,35 @@ let weddingPicsArr = [];
 
 function importPictures(totalNumOfPhotos, arrName, folderName, photoType){
     for(let i = 1; i < totalNumOfPhotos + 1; i++){
-        arrName[i] = `<img src="${folderName}/${photoType}${i}.jpg">`;
-        document.querySelector(".wedding-photos").innerHTML +=  `<img src="${folderName}/${photoType}${i}.jpg">`;   
+        arrName[i] = `<img class="reveal" src="${folderName}/${photoType}${i}.jpg">`;
+        document.querySelector(".wedding-photos").innerHTML +=  `<img class="reveal" src="${folderName}/${photoType}${i}.jpg">`;   
          
     }
 }
 
-function drawWeddingPics(){
-    document.querySelector(".wedding-photos").innerHTML += importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
-}
+
 
 importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
 
-drawWeddingPics();
 
 
+
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
 
 
 

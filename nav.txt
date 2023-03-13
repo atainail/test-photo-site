@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg fixed-top center">
 
-    <a class="navbar-brand text-white" href="#">Visionary/Images</a>
+    <a class="navbar-brand text-white" href="index.html">Visionary/Images</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
       aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       
@@ -31,7 +31,7 @@
 
 
           <div class="dropdown-menu center" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Weddings</a>
+            <a class="dropdown-item" href="wedding.html">Weddings</a>
             <a class="dropdown-item" href="#">Headshots</a>
           </div>
         </li>
