@@ -1,4 +1,5 @@
-$('.navigation-import').load("nav.txt");
+
+
 
 
 //toggles between + and - in the navbar
@@ -6,38 +7,33 @@ $('button').click(function() {
     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
 });
  
-//rotates the toggler when clicked
-let current_rotation = 180;
-document.querySelector("i").addEventListener('click', function() {
-    if(current_rotation < 0){
-       current_rotation += 360; 
-    }
-	else if(current_rotation > 0){
-        current_rotation -= 360;
-    }
-	document.querySelector("#spin").style.transform = 'rotate(' + current_rotation + 'deg)';
-});
+
 
 
 
 //imports and puts all photos from folder into an array 
 
 let weddingPicsArr = [];
-// wedding-pics wedding1.jpg
 
 function importPictures(totalNumOfPhotos, arrName, folderName, photoType){
-    for(let i = 1; i < totalNumOfPhotos; i++){
+    for(let i = 1; i < totalNumOfPhotos + 1; i++){
         arrName[i] = `<img src="${folderName}/${photoType}${i}.jpg">`;
-        console.log(weddingPicsArr);
+        document.querySelector(".wedding-photos").innerHTML +=  `<img src="${folderName}/${photoType}${i}.jpg">`;   
+         
     }
 }
 
-importPictures(17, weddingPicsArr, wedding-pics, wedding);
+function drawWeddingPics(){
+    document.querySelector(".wedding-photos").innerHTML += importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
+}
+
+importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
+
+drawWeddingPics();
 
 
 
 
 
-
-
+$('.navigation-import').load("nav.txt");
 
