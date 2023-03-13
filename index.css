@@ -14,7 +14,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+  background: gray; 
 }
  
 /* Handle */
