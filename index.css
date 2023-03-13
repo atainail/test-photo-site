@@ -200,7 +200,11 @@ i:hover{
   }
 
 
+  img {
 
+    opacity: 0;
+
+  }
 
   @keyframes photoFadeIn {
     0% { opacity: 0; transform: translate(1.5em, 0);}

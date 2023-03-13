@@ -20,5 +20,24 @@ document.querySelector("i").addEventListener('click', function() {
 
 
 
+//imports and puts all photos from folder into an array 
+
+let weddingPicsArr = [];
+// wedding-pics wedding1.jpg
+
+function importPictures(totalNumOfPhotos, arrName, folderName, photoType){
+    for(let i = 1; i < totalNumOfPhotos; i++){
+        arrName[i] = `<img src="${folderName}/${photoType}${i}.jpg">`;
+        console.log(weddingPicsArr);
+    }
+}
+
+importPictures(17, weddingPicsArr, wedding-pics, wedding);
+
+
+
+
+
+
 
 
