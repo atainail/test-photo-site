@@ -60,3 +60,7 @@ let scrollTracker = 0;
     }
 });
 
+window.onlaod = function (){
+    document.querySelector(".scroll-down").innerHTML = "hfh";
+}
+

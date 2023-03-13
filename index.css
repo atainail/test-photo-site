@@ -14,12 +14,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: gray; 
+  /* background: gray;  */
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: wihte; 
+  background: white; 
 }
 
 /* Handle on hover */
