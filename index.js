@@ -13,10 +13,8 @@ $('button').click(function () {
 
 
 //imports and puts all photos from folder into an array 
-
 let weddingPicsArr = [];
 let headShotsArr = [];
-
 
 function importPictures(totalNumOfPhotos, arrName, folderName, photoType) {
     for (let i = 1; i < totalNumOfPhotos + 1; i++) {
@@ -38,12 +36,10 @@ else if (title.includes('Headshots')) {
 }
 
 
-console.log(title)
-
-// importPictures(7 , headShotsArr  , 'headshots'   , 'head'   );     
-// importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');    
 
 
+
+//will have the photos fade in
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -59,6 +55,8 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 
+
+//displays the scroll down arrow 
 window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
     if (scroll + 1 > scroll || scroll - 1 < scroll) {
