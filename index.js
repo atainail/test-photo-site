@@ -1,12 +1,14 @@
-$('.navigation-import').load("nav.txt");
-
-
-
 //toggles between + and - in the navbar
 $('button').click(function() {
     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
 });
  
+
+$('.navigation-import').load("nav.txt");
+
+
+
+
 
 
 
@@ -22,9 +24,6 @@ function importPictures(totalNumOfPhotos, arrName, folderName, photoType){
          
     }
 }
-
-
-
 importPictures(17, weddingPicsArr, 'wedding-pics', 'wedding');
 
 
@@ -42,23 +41,15 @@ function reveal() {
       }
     }
   }
-
   window.addEventListener("scroll", reveal);
-
-let scrollTracker = 0;
-
-
 
 
 
   window.addEventListener("scroll", (event) => {
     let scroll = this.scrollY;
-    if(scroll > 150){
+    if(scroll + 1 > scroll || scroll - 1 < scroll){
         document.querySelector(".scroll-down").innerHTML = "";
     } 
 });
 
-// window.onlaod = function (){
-//     document.querySelector(".scroll-down").innerHTML = "hfh";
-// }
 

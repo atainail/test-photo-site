@@ -150,7 +150,7 @@ i:hover{
 .wedding-photos img{
   width: 30em;
   height: 45m;
-  padding: 5em 2em 2em 0 ;
+  padding: 5em 2em 2em 2em ;
 
   /* animation: photoFadeIn 4s;
     -webkit-animation: photoFadeIn 4s;
