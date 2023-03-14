@@ -1,6 +1,5 @@
-window.onload(function(){
-   $('.navigation-import').load("nav.txt"); 
-})
+$('.navigation-import').load("nav.txt"); 
+
 
 //toggles between + and - in the navbar
 $('button').click(function() {
