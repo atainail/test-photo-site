@@ -1,10 +1,14 @@
+window.onload(function(){
+   $('.navigation-import').load("nav.txt"); 
+})
+
 //toggles between + and - in the navbar
 $('button').click(function() {
     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
 });
  
 
-$('.navigation-import').load("nav.txt");
+
 
 
 //imports and puts all photos from folder into an array 
