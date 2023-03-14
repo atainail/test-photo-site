@@ -376,16 +376,8 @@ i:hover{
   }
 
 
-  /* @media (min-width: 350px) { 
 
-    #carouselExampleIndicators{
-      height: 100vh;
-      width: 85%;
-    }
-} */
-
-
-
+/* Hover drop down should activate with this */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu { 
     display: none; 
@@ -399,12 +391,7 @@ i:hover{
     margin-top: 0; 
   }
 }	
-/* @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	 */
+
 
 
 /* After Medium device size is reached  (tablets, less than 992px) */
@@ -432,9 +419,6 @@ i:hover{
         display: none;
       }
 
-      .navbar {
-        /* display: none; */
-      }
 
       .nav-item {
         transform: translate(0, -1.5em);
@@ -447,21 +431,17 @@ i:hover{
       
       }
 
-      
-
+    
       #carouselExampleIndicators{
         height: 100vh;
         width: 50%;
       }
 
-      .carousel {
-        /* float: right; */
-        /* width: 100%; */
-      }
 
-      .dropdown:hover>.dropdown-menu {
+
+      /* .dropdown:hover>.dropdown-menu {
         display: block;
-      }
+      } */
        
 
 
