@@ -1,12 +1,13 @@
 
    $('.navigation-import').load("nav.txt"); 
 
-window.onload(function(){
+
+   
 //toggles between + and - in the navbar
 $('button').click(function() {
     $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
 });
-});
+
 
 
 

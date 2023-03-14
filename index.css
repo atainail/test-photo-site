@@ -200,6 +200,11 @@ i:hover{
   animation: fade-right 1s ease-in;
 }
 
+.dropdown-item{
+  text-shadow: 0px 0px;
+}
+
+
 
 @keyframes fade-bottom {
   0% {
@@ -377,12 +382,12 @@ i:hover{
 
 
 
-@media all and (min-width: 992px) {
+/* @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }
 	.navbar .nav-item:hover .nav-link{   }
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}	
+}	 */
 
 
 /* After Medium device size is reached  (tablets, less than 992px) */
@@ -425,7 +430,17 @@ i:hover{
       
       }
 
+      .navbar .nav-item .dropdown-menu { 
+        display: none; 
+      }
       
+      .navbar, .nav-item:hover, .dropdown-menu{ 
+        display: block; 
+      }
+
+      .navbar, .nav-item, .dropdown-menu{ 
+        margin-top: 0; 
+      }
 
       #carouselExampleIndicators{
         height: 100vh;
