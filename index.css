@@ -29,7 +29,7 @@ body {
 
 .navbar{
     color: white;
-    text-shadow: .9em .9em black;
+    text-shadow: .9em .9em .2em black;
 }
 
 a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:active {
