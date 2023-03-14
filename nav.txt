@@ -25,7 +25,7 @@
 
         <li class="nav-item col-md">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" onclick="console.log('clicked')">
+            aria-haspopup="true" aria-expanded="false">
             Works
           </a>
 
