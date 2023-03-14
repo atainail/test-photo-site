@@ -22,19 +22,18 @@
         </li>
 
 
-
+      <div class="dropdown">
         <li class="nav-item col-md">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Works
           </a>
-
-
           <div class="dropdown-menu center" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="wedding.html">Weddings</a>
             <a class="dropdown-item" href="headshots.html">Headshots</a>
           </div>
         </li>
+      </div>
 
 
 
