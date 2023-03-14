@@ -96,9 +96,34 @@ svg:hover {
 .scroll-down {
   color: white;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  top: 50%;
+  right: 50%;
+
+  animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    font-size: 3em;
   
+}
+
+.scroll-down svg {
+  width: 4em;
+  height: 4em;
+  padding: 1.2em 0 0 0;
+  animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
 }
 
  

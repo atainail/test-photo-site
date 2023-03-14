@@ -55,12 +55,10 @@ let scrollTracker = 0;
     let scroll = this.scrollY;
     if(scroll > 150){
         document.querySelector(".scroll-down").innerHTML = "";
-    } else {
-        document.querySelector(".scroll-down").innerHTML = "hfh";
-    }
+    } 
 });
 
-window.onlaod = function (){
-    document.querySelector(".scroll-down").innerHTML = "hfh";
-}
+// window.onlaod = function (){
+//     document.querySelector(".scroll-down").innerHTML = "hfh";
+// }
 
