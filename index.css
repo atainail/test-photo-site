@@ -48,14 +48,14 @@ a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:act
     transition: .5s;
 }
 
-.navbar-brand:hover {
+/* .navbar-brand:hover {
   transform: translate(0, -2em);
-}
+} */
 
 .navbar-nav {
   background-color: black;
 opacity: 80%;
-transform: translate(0, -.5em);
+/* transform: translate(0, -.5em); */
 }
 
 .nav-item {
@@ -144,6 +144,15 @@ svg:hover {
   animation: bounce 2.5s ease infinite;
 }
 @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+.bounce2 {
+  animation: bounce2 10s ease infinite;
+}
+@keyframes bounce2 {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
@@ -311,6 +320,7 @@ i:hover{
 
   .top-of-page:hover {
     transform: translate(0, .001em);
+    color: gray;
   }
 
   .top-of-page:active {
