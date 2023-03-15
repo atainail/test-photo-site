@@ -292,6 +292,39 @@ i:hover{
     opacity: 0;
   }
 
+
+/* Start code adapted from https://www.30secondsofcode.org/css/s/hover-underline-animation edited by Atai Nail*/
+a.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+}
+
+a.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: .1em;
+  top: 1.05em;
+  bottom: 0;
+  left: 25%;
+  opacity: 70%;
+  background-color: gray;
+  /* background-image: linear-gradient(to bottom right, #6d8bc5, white); */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* End Code */
+
+
+
  
   @keyframes fadeIn {
     0% { opacity: 0; transform: translate(0px);}
