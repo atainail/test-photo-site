@@ -204,6 +204,8 @@ i:hover{
 .active.fade-right {
   animation: fade-right 1s ease-in;
 }
+/* Reveal End */
+
 
 .dropdown-item{
   text-shadow: 0px 0px;
@@ -304,10 +306,9 @@ a.hover-underline-animation {
 a.hover-underline-animation::after {
   content: '';
   position: absolute;
-  width: 70%;
+  /* width: 70%; */
   transform: scaleX(0);
   height: .1em;
-  top: 1.05em;
   bottom: 0;
   left: 25%;
   opacity: 70%;
@@ -316,7 +317,6 @@ a.hover-underline-animation::after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
 a.hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
