@@ -417,20 +417,7 @@ i:hover{
 
 
 
-/* Hover drop down should activate with this */
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu { 
-    display: none; 
-  }
-  
-  .navbar, .nav-item:hover, .dropdown-menu{ 
-    display: block; 
-  }
 
-  .navbar, .nav-item, .dropdown-menu{ 
-    margin-top: 0; 
-  }
-}	
 
 
 
@@ -477,6 +464,20 @@ i:hover{
         width: 50%;
       }
 
+
+
+      /* Hover drop down should activate with this */
+      .navbar .nav-item .dropdown-menu { 
+        display: none; 
+      }
+      
+      .navbar, .nav-item:hover, .dropdown-menu{ 
+        display: block; 
+      }
+    
+      .navbar, .nav-item, .dropdown-menu{ 
+        margin-top: 0; 
+      }
 
 
       /* .dropdown:hover>.dropdown-menu {
