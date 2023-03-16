@@ -52,10 +52,15 @@ a.navbar-brand, a.navbar-brand:visited, a.navbar-brand:hover, a.navbar-brand:act
   transform: translate(0, -2em);
 } */
 
+
+.navbar-brand {
+  transform: translate(0, -2em);
+}
+
 .navbar-nav {
   background-color: black;
 opacity: 80%;
-/* transform: translate(0, -.5em); */
+transform: translate(0, -.5em);
 }
 
 .nav-item {
