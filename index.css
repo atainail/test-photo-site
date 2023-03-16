@@ -187,18 +187,7 @@ i:hover{
 .photos img{
   width: 30em;
   height: 45m;
-  padding: 5em 2em 2em 2em ;
-
-  /* animation: photoFadeIn 4s;
-    -webkit-animation: photoFadeIn 4s;
-    -moz-animation: photoFadeIn 4s;
-    -o-animation: photoFadeIn 4s;
-    -ms-animation: photoFadeIn 4s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    opacity: 0; */
-
-    
+  padding: 5em 2em 2em 2em ;    
 }
 
 /* Reveal tutorial found here https://alvarotrigo.com/blog/css-animations-scroll/ */
@@ -324,8 +313,8 @@ i:hover{
   }
 
   .top-of-page:hover {
-    transform: translate(0, .001em);
-    color: gray;
+    text-shadow: 2px 2px .2em white;
+    transform: translate(0px);
   }
 
   .top-of-page:active {
